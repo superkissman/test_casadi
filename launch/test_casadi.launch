@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="obs_sim" pkg="test_casadi" type="obs_sim" output="screen" />
+    <node name="obs_pred" pkg="test_casadi" type="obs_pred" output="screen" />
+    <node name="test_casadi_node" pkg="test_casadi" type="test_casadi_node" output="screen" />
+
+</launch>

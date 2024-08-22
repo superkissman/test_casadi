@@ -1,0 +1,8 @@
+<launch>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find test_casadi)/map/map20.yaml" output="screen"/>
+    <node name="maker" pkg="test_casadi" type="maker" output="screen" />
+    <node name="mymap_server" pkg="test_casadi" type="mymap_server" output="screen" />
+    <node name="test_casadi_node" pkg="test_casadi" type="test_casadi_node" output="screen" />
+    <!-- <node name="docker_rviz" pkg="rviz" type="rviz" /> -->
+
+</launch>
